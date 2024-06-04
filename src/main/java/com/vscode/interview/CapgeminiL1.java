@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class CapgeminiL1 {
     public static void main(String[] args) {
-        System.out.println("Capgemini l1: 28-May-2024");
+        System.out.println("Capgemini l1: 28-May-2024: CLEARED");
 
         System.out.println("Q1. Find the employee having third highest salary");
         Employee.getEmployees()
