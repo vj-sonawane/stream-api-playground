@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class InfosysL1 {
     public static void main(String[] args) throws EmployeeNotFoundException {
-        System.out.println("Infosys l1: 31-May-2024");
+        System.out.println("Infosys l1: 31-May-2024: REJECTED");
 
         System.out.println("Q1. Sort the employee in the reverse order of their joining date");
         Employee.getEmployees()

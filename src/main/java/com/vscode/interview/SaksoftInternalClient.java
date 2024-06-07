@@ -22,7 +22,7 @@ public class SaksoftInternalClient {
 
         //Q.9 can you explain Builder design pattern
 
-        //Q.10 If you are upgrading or migrating a application then what all things you need to take in care while doing that.
+        //Q.10 If you are upgrading or migrating an application then what all things you need to take in care while doing that.
 
     }
 }
