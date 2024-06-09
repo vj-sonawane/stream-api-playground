@@ -1,6 +1,7 @@
 package com.vscode.model;
 
 import com.vscode.constant.Departments;
+import com.vscode.exceptions.NoSuchEmployeeException;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Data
 @Builder
@@ -86,5 +88,12 @@ public class Employee {
                 return nestedEmp;
         }
 
+        public static Employee getEmployeeById(Integer empId) throws NoSuchEmployeeException{
+                return Employee.getEmployees()
+                        .stream()
+                        .filter(emp -> emp.getId() == empId)
+                        .findFirst()
+                        .orElseThrow(() -> new NoSuchEmployeeException("No employee found with employee Id: "+empId));
+        }
 }
 

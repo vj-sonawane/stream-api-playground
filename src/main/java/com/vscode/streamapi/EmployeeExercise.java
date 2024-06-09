@@ -2,14 +2,15 @@ package com.vscode.streamapi;
 
 import com.vscode.constant.Departments;
 import com.vscode.exceptions.EmployeeNotFoundException;
+import com.vscode.exceptions.NoSuchEmployeeException;
 import com.vscode.model.Employee;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class EmployeeExercise {
     public static void main(String[] args) throws EmployeeNotFoundException {
-
         System.out.println("Q1. Sort the employee in the reverse order of their joining date");
         Employee.getEmployees()
                 .stream()
@@ -39,19 +40,5 @@ public class EmployeeExercise {
                 .filter(emp -> Departments.FINANCE.equals(emp.getDepartment()))
                 .forEach(System.out::println);
         System.out.println("----------------------------------------------------------------------------------------------------------");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
