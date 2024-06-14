@@ -1,5 +1,6 @@
 package com.vscode.streamapi;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -8,6 +9,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class NumberExercise {
+
+    List<Integer> numbers = Arrays.asList(86, 23, 47, 51, 92, 14, 37, 68, 29, 95, 42, 63, 55, 78, 81, 39, 17, 5, 72, 33);
+
     public static void main(String[] args) {
         System.out.println("----------------------------------------------------------------------------------------------------------");
         System.out.println("Q1. Given any integer list, fetch the third highest value from the list using Streams API");
