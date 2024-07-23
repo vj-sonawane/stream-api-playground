@@ -28,8 +28,8 @@ public class Employee {
 
         public static List<Employee> getEmployees() {
                 return Arrays.asList(
-                        Employee.builder().id(1).name("Sachin Tendulkar").age(30).department(Departments.HR).salary(50000).joiningDate(LocalDate.of(2010, 1, 15)).build(),
-                        Employee.builder().id(2).name("Virat Kohli").age(25).department(Departments.FINANCE).salary(60000).joiningDate(LocalDate.of(2013, 3, 10)).build(),
+                        Employee.builder().id(1).name("Sachin Tendulkar").age(30).department(Departments.INSERT_USER).salary(50000).joiningDate(LocalDate.of(2010, 1, 15)).build(),
+                        Employee.builder().id(2).name("Virat Kohli").age(25).department("Fin").salary(60000).joiningDate(LocalDate.of(2013, 3, 10)).build(),
                         Employee.builder().id(3).name("Rohit Sharma").age(35).department(Departments.IT).salary(75000).joiningDate(LocalDate.of(2008, 7, 25)).build(),
                         Employee.builder().id(4).name("MS Dhoni").age(28).department(Departments.HR).salary(52000).joiningDate(LocalDate.of(2012, 5, 18)).build(),
                         Employee.builder().id(5).name("Rahul Dravid").age(40).department(Departments.FINANCE).salary(80000).joiningDate(LocalDate.of(2006, 11, 12)).build(),
