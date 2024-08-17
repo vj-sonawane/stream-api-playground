@@ -37,7 +37,7 @@ public class EmployeeExercise {
         System.out.println("Q4. List down all the employees in Finance department");
         Employee.getEmployees()
                 .stream()
-                .filter(emp -> Departments.FINANCE.equals(emp.getDepartment()))
+                .filter(emp -> Departments.FINANCE.equalsIgnoreCase(emp.getDepartment()))
                 .forEach(System.out::println);
         System.out.println("----------------------------------------------------------------------------------------------------------");
     }

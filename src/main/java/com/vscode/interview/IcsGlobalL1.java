@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.CopyOnWriteArrayList;
-
 public class IcsGlobalL1 {
     public static List<String> removeLetter(String word) {
         List<String> list = new CopyOnWriteArrayList<>();

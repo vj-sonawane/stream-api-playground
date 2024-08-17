@@ -1,6 +1,6 @@
 package com.vscode.interview;
 
-public class B extends A{
+public class Child extends Parent{
         void m1() {
             System.out.println("in m1 of class B");
         }

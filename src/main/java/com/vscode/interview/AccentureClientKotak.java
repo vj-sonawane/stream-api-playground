@@ -1,8 +1,7 @@
 package com.vscode.interview;
 
-public class  CitiusTechL1 {
+public class AccentureClientKotak {
     public static void main(String[] args) {
-
 
     }
 }

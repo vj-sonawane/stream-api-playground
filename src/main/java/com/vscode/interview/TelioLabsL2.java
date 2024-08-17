@@ -1,7 +1,8 @@
 package com.vscode.interview;
 
-public class  CitiusTechL1 {
+public class TelioLabsL2 {
     public static void main(String[] args) {
+
 
 
     }
