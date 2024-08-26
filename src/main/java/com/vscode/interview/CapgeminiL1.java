@@ -20,8 +20,8 @@ public class CapgeminiL1 {
                 .skip(2)
                 .forEach(System.out::println);
 
-        System.out.println("Q2. Find the occurrence of each charter in string");
-        String city = "AURANGABAD";
+        System.out.println("Q2. Find the occurrence of each character in string");
+        String city = "Mississippi";
 
         Map<String, Long> collect = Arrays.stream(city.split(""))
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));

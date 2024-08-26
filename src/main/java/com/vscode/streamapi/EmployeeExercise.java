@@ -8,6 +8,7 @@ import com.vscode.model.Employee;
 import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.stream.Stream;
 
 public class EmployeeExercise {
     public static void main(String[] args) throws EmployeeNotFoundException {
@@ -40,5 +41,15 @@ public class EmployeeExercise {
                 .filter(emp -> Departments.FINANCE.equalsIgnoreCase(emp.getDepartment()))
                 .forEach(System.out::println);
         System.out.println("----------------------------------------------------------------------------------------------------------");
+
+        List<Employee> sortedEmployees = Employee.getEmployees()
+                .stream()
+                .sorted(Comparator.comparingInt(Employee::getAge).reversed()
+                        .thenComparingDouble(Employee::getSalary))
+                .toList();
+
+        for (Employee employee1 : sortedEmployees){
+            System.out.println(employee1);
+        }
     }
 }

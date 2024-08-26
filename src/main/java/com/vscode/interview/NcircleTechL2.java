@@ -20,7 +20,7 @@ public class NcircleTechL2 {
         }
         list.add(max);
 //        List<Integer> min =
-//                Arrays.asList(arr)
+//                Arrays.asList(arr)1
 //                        .stream()
 //                        .collect(Collectors.MinBy(Comparator.comparingInt));
 //        for(Integer num: min){
