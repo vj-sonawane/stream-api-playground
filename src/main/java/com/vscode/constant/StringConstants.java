@@ -8,6 +8,8 @@ public class StringConstants {
 
     public static final String SENTENCE_CHAR = "The quick brown fox jumps over the lazy dog";
 
+    public static final String SENTENCE = "there is a tree tree has leaves leaves are green";
+
     public static final String NAME = "I am Vijay";
 
 }
